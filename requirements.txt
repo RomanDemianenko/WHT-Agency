@@ -3,4 +3,4 @@ djangorestframework==3.14.0
 pytz==2021.3
 django-filter==22.1
 requests==2.22.0
-uwsgi==2.0.20
+uwsgi==2.0.22

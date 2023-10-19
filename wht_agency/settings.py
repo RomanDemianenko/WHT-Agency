@@ -27,19 +27,24 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
 # Application definition
-
-INSTALLED_APPS = [
+DEFAULT_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+]
+
+CUSTOM_APPS = [
     'teams',
+]
+
+EXTERNAL_APPS = [
     'django_filters',
-    'rest_framework.authtoken',
     'rest_framework',
 ]
+INSTALLED_APPS = DEFAULT_APPS + CUSTOM_APPS + EXTERNAL_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
